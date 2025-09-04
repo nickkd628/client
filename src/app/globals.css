@@ -1,7 +1,22 @@
 /* global.css – Tailwind v4 compatible */
-@import "tailwindcss/preflight";   
- @import "tailwindcss/components";  
- @import "tailwindcss/utilities";   
+@import "tailwindcss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  width: 100%;
+  @apply text-sm;
+  @apply bg-gray-500;
+  @apply text-gray-900;
+}
 
 
 
