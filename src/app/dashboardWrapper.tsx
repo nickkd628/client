@@ -1,56 +1,55 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import Navbar from "@/app/(components)/Navbar";
-import Link from "next/link";
-// import {useRouter} from "next/navigation
+import Sidebar from "@/app/(components)/Sidebar";
+import StoreProvider, { useAppSelector } from "./redux";
+
+const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
+  const isSidebarCollapsed = useAppSelector(
+    (state) => state.global.isSidebarCollapsed
+  );
+
+  const isDarkMode = useAppSelector((state) => state.global.isDarkMode);
+  useEffect(() => {
+    if (isDarkMode) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.add("light");
+    }
+  });
+
+  return (
+    <div
+      className={`${
+        isDarkMode ? "dark" : "light"
+      }"flex min-h-screen bg-gray-50 text-gray-900"`}
+    >
+      <Sidebar />
+      <main
+        className={`flex-1 p-6" ${
+          isSidebarCollapsed ? "md:pl-24" : "md:pl-72"
+        //   // might want to remove this class
+        }`}
+        // code i got from video but it adds space for no reason which makes it look weird
+        // className={"flex-1 p-6"}
+        // might want to remove this class
+      >
+        <div className="flex-1 flex flex-col">
+          {/* may need to remove this div, must test line 11  */}
+          <Navbar />
+          {children}
+        </div>
+      </main>
+    </div>
+  );
+};
+// if anything breaks copy layout back into dashboardWrapper
+
 const DashboardWrapper = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="flex min-h-screen bg-gray-50 text-gray-900">
-      {/* Simple Sidebar */}
-      <div className="w-64 bg-gray-800 text-white">
-        <div className="p-4">
-          <h1 className="font-bold text-xl mb-8">Inventory</h1>
-          <nav className="space-y-2">
-            <a
-              href="/dashboard"
-              className="flex items-center space-x-3 p-3 rounded-lg bg-blue-600"
-            >
-              <span>📊</span>
-              <span>Dashboard</span>
-            </a>
-            <a
-              href="#"
-              className="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-700"
-            >
-              <span>📦</span>
-              <span>Products</span>
-            </a>
-            <a
-              href="#"
-              className="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-700"
-            >
-              <span>📈</span>
-              <span>Analytics</span>
-            </a>
-            <Link
-              href="/settings"
-              className="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-700"
-            >
-              <span>⚙️</span>
-              <span>Settings</span>
-            </Link>
-          </nav>
-        </div>
-      </div>
-
-      {/* Main Content Area */}
-      {/* if anything does break move the code from Navbar/index.tsx  back between lines 35 and 40 */}
-      <div className="flex-1 flex flex-col">
-        <Navbar />
-
-        {/* Main Content */}
-        <main className="flex-1 p-6">{children}</main>
-      </div>
-    </div>
+    <StoreProvider>
+      <DashboardLayout>{children}</DashboardLayout>
+    </StoreProvider>
   );
 };
 
