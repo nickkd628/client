@@ -19,11 +19,15 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
   });
 
   return (
-    <div
-      className={`${
-        isDarkMode ? "dark" : "light"
-      } flex min-h-screen bg-gray-50 text-gray-900`}
-    >
+    <div className="min-h-screen animated-gradient-bg text-white relative overflow-hidden">
+      {/* Background Orbs */}
+      <div className="bg-orb bg-orb-1"></div>
+      <div className="bg-orb bg-orb-2"></div>
+      <div className="bg-orb bg-orb-3"></div>
+      
+      {/* Main Layout */}
+      <div className="flex min-h-screen relative z-10">
+      
       <Sidebar />
       <main
         className={`flex-1 p-6 transition-all duration-300 ${
@@ -39,6 +43,7 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
           {children}
         </div>
       </main>
+      </div>
     </div>
   );
 };

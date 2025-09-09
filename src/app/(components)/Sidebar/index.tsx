@@ -35,15 +35,15 @@ const SideBarLink = ({
   return (
     <Link href={href}>
       <div
-        className={`cursor-pointer flex items-center rounded-lg transition-colors ${
+        className={`cursor-pointer flex items-center rounded-lg glass-card-hover transition-all duration-300 ${
           isCollapsed ? "justify-center py-4" : "justify-start px-4 py-3"
         } ${
           isActive 
-            ? "bg-blue-500 text-white" 
-            : "text-gray-300 hover:bg-gray-700 hover:text-white"
+            ? "glass-button text-white glow-purple-strong" 
+            : "text-white/70 hover:text-white hover:glow-purple"
         } gap-3`}
       >
-        <Icon className={`w-5 h-5 ${isActive ? "text-white" : "text-gray-300"}`} />
+        <Icon className={`w-5 h-5 transition-colors ${isActive ? "text-white" : "text-white/70"}`} />
         <span
           className={`${
             isCollapsed ? "hidden" : "block"
@@ -69,20 +69,20 @@ const Sidebar = () => {
 
   const SidebarClassName = `fixed flex flex-col ${
     isSidebarCollapsed ? "w-0 md:w-16" : "w-72 md:w-64"
-  } bg-gray-900 transition-all duration-300 overflow-hidden h-full shadow-lg z-40`;
+  } glass-card transition-all duration-300 overflow-hidden h-full z-40 m-4 mr-0`;
 
   return (
     <div className={SidebarClassName}>
       {/* TOP LOGO */}
       <div className={`flex items-center ${
         isSidebarCollapsed ? "justify-center" : "justify-between"
-      } p-4 border-b border-gray-700`}>
+      } p-4 border-b border-white/10`}>
         {!isSidebarCollapsed && (
-          <h1 className="font-bold text-xl text-white">Inventory</h1>
+          <h1 className="font-bold text-xl gradient-text">Inventory</h1>
         )}
         <button
           onClick={toggleSidebar}
-          className="p-2 rounded-lg hover:bg-gray-700 transition-colors text-gray-300 hover:text-white"
+          className="p-2 rounded-lg glass-card-hover transition-colors text-white/70 hover:text-white glow-purple"
         >
           <Menu className="w-5 h-5" />
         </button>
@@ -134,8 +134,8 @@ const Sidebar = () => {
       </nav>
 
       {/* FOOTER */}
-      <div className="p-4 border-t border-gray-700">
-        <p className={`text-center text-xs text-gray-400 ${
+      <div className="p-4 border-t border-white/10">
+        <p className={`text-center text-xs text-white/60 ${
           isSidebarCollapsed ? "hidden" : "block"
         }`}>
           &copy; 2025 Inventory Management System
