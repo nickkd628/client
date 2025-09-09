@@ -104,31 +104,31 @@
 				</tr>
 			</thead>
 				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='https://github.com/MahaKoala/NicksInvClient/blob/master/README.md'>README.md</a></b></td>
+					<td style='padding: 8px;'><b><a href='https://github.com/nickkd628/client/blob/master/README.md'>README.md</a></b></td>
 					<td style='padding: 8px;'>- Provides an overview of the Next.js applications purpose and structure, emphasizing its role in delivering a modern, optimized web interface<br>- Highlights its foundation on create-next-app, integration with Vercel for deployment, and use of advanced font optimization<br>- Serves as a guide for understanding the projects main goal of building a performant, easily editable web experience within a scalable architecture.</td>
 				</tr>
 				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='https://github.com/MahaKoala/NicksInvClient/blob/master/eslint.config.mjs'>eslint.config.mjs</a></b></td>
+					<td style='padding: 8px;'><b><a href='https://github.com/nickkd628/client/blob/master/eslint.config.mjs'>eslint.config.mjs</a></b></td>
 					<td style='padding: 8px;'>- Defines ESLint configuration tailored for a Next.js project, ensuring code quality and consistency across the codebase<br>- It extends recommended core web vitals and TypeScript rules while excluding external and build directories from linting<br>- This setup supports maintaining a robust, standardized code environment aligned with Next.js best practices.</td>
 				</tr>
 				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='https://github.com/MahaKoala/NicksInvClient/blob/master/next.config.ts'>next.config.ts</a></b></td>
+					<td style='padding: 8px;'><b><a href='https://github.com/nickkd628/client/blob/master/next.config.ts'>next.config.ts</a></b></td>
 					<td style='padding: 8px;'>- Defines image optimization settings for the Next.js application by specifying allowed external image domains<br>- Ensures efficient and secure image loading from trusted sources, contributing to overall performance and security within the projects architecture<br>- This configuration supports seamless integration of external visual content while maintaining best practices for web performance.</td>
 				</tr>
 				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='https://github.com/MahaKoala/NicksInvClient/blob/master/tsconfig.json'>tsconfig.json</a></b></td>
+					<td style='padding: 8px;'><b><a href='https://github.com/nickkd628/client/blob/master/tsconfig.json'>tsconfig.json</a></b></td>
 					<td style='padding: 8px;'>- Defines TypeScript compiler options to ensure consistent, type-safe development aligned with modern JavaScript standards<br>- It optimizes the build process for a Next.js project by specifying module resolution, library support, and strict type checking, facilitating reliable code quality and seamless integration across the codebase.</td>
 				</tr>
 				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='https://github.com/MahaKoala/NicksInvClient/blob/master/postcss.config.mjs'>postcss.config.mjs</a></b></td>
+					<td style='padding: 8px;'><b><a href='https://github.com/nickkd628/client/blob/master/postcss.config.mjs'>postcss.config.mjs</a></b></td>
 					<td style='padding: 8px;'>- Configure PostCSS to integrate Tailwind CSS and autoprefixer, enabling streamlined styling workflows within the project<br>- This setup ensures consistent application of utility-first CSS classes and automatic vendor prefixing, contributing to a maintainable and cross-browser compatible frontend architecture<br>- It plays a crucial role in the projects styling pipeline, facilitating efficient and reliable CSS processing.</td>
 				</tr>
 				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='https://github.com/MahaKoala/NicksInvClient/blob/master/tailwind.config.ts'>tailwind.config.ts</a></b></td>
+					<td style='padding: 8px;'><b><a href='https://github.com/nickkd628/client/blob/master/tailwind.config.ts'>tailwind.config.ts</a></b></td>
 					<td style='padding: 8px;'>- Defines and configures custom light and dark color themes for a Tailwind CSS project, utilizing dynamic color shading and inversion for seamless theme switching<br>- Integrates these themes into the Tailwind setup to enable consistent, maintainable styling across the application, supporting dark mode via class-based toggling and enhancing visual coherence throughout the codebase.</td>
 				</tr>
 				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='https://github.com/MahaKoala/NicksInvClient/blob/master/package.json'>package.json</a></b></td>
+					<td style='padding: 8px;'><b><a href='https://github.com/nickkd628/client/blob/master/package.json'>package.json</a></b></td>
 					<td style='padding: 8px;'>- Defines project metadata, dependencies, and scripts for the inventory management application built with Next.js and React<br>- Facilitates development, building, and deployment workflows, ensuring consistent environment setup and package management across the codebase<br>- Serves as the foundational configuration that integrates various tools and libraries essential for the applications architecture.</td>
 				</tr>
 			</table>
@@ -154,15 +154,15 @@
 						</tr>
 					</thead>
 						<tr style='border-bottom: 1px solid #eee;'>
-							<td style='padding: 8px;'><b><a href='https://github.com/MahaKoala/NicksInvClient/blob/master/src/app/dashboardWrapper.tsx'>dashboardWrapper.tsx</a></b></td>
+							<td style='padding: 8px;'><b><a href='https://github.com/nickkd628/client/blob/master/src/app/dashboardWrapper.tsx'>dashboardWrapper.tsx</a></b></td>
 							<td style='padding: 8px;'>- Provides a responsive dashboard layout with a collapsible sidebar, top navigation bar, and main content area<br>- Facilitates seamless navigation, search, notifications, and user profile access within an inventory management system<br>- Serves as the core structural component, ensuring consistent UI and user experience across the applications dashboard interface.</td>
 						</tr>
 						<tr style='border-bottom: 1px solid #eee;'>
-							<td style='padding: 8px;'><b><a href='https://github.com/MahaKoala/NicksInvClient/blob/master/src/app/page.tsx'>page.tsx</a></b></td>
+							<td style='padding: 8px;'><b><a href='https://github.com/nickkd628/client/blob/master/src/app/page.tsx'>page.tsx</a></b></td>
 							<td style='padding: 8px;'>- Routes the main application entry point to the dashboard component, serving as the initial interface for users<br>- It integrates the dashboard into the overall project architecture, ensuring a seamless user experience by rendering the core functionality upon application launch<br>- This setup establishes the foundational navigation flow within the project’s frontend architecture.</td>
 						</tr>
 						<tr style='border-bottom: 1px solid #eee;'>
-							<td style='padding: 8px;'><b><a href='https://github.com/MahaKoala/NicksInvClient/blob/master/src/app/layout.tsx'>layout.tsx</a></b></td>
+							<td style='padding: 8px;'><b><a href='https://github.com/nickkd628/client/blob/master/src/app/layout.tsx'>layout.tsx</a></b></td>
 							<td style='padding: 8px;'>- Defines the root layout for the application, establishing global styles, fonts, and metadata<br>- It ensures consistent visual theming and structure across all pages by wrapping content within a dashboard layout component, serving as the foundational structure that integrates styling, localization, and layout hierarchy within the overall architecture.</td>
 						</tr>
 					</table>
@@ -180,7 +180,7 @@
 								</tr>
 							</thead>
 								<tr style='border-bottom: 1px solid #eee;'>
-									<td style='padding: 8px;'><b><a href='https://github.com/MahaKoala/NicksInvClient/blob/master/src/app/dashboard/page.tsx'>page.tsx</a></b></td>
+									<td style='padding: 8px;'><b><a href='https://github.com/nickkd628/client/blob/master/src/app/dashboard/page.tsx'>page.tsx</a></b></td>
 									<td style='padding: 8px;'>- Provides the main interface for the inventory management systems dashboard, serving as the central hub for displaying key metrics and system status<br>- It establishes the visual structure and layout for user interactions, facilitating an overview of inventory data and upcoming content updates within the applications architecture.</td>
 								</tr>
 							</table>
