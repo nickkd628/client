@@ -22,13 +22,12 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
     <div
       className={`${
         isDarkMode ? "dark" : "light"
-      }"flex min-h-screen bg-gray-50 text-gray-900"`}
+      } flex min-h-screen bg-gray-50 text-gray-900`}
     >
       <Sidebar />
       <main
-        className={`flex-1 p-6" ${
+        className={`flex-1 p-6 transition-all duration-300 ${
           isSidebarCollapsed ? "md:pl-24" : "md:pl-72"
-        //   // might want to remove this class
         }`}
         // code i got from video but it adds space for no reason which makes it look weird
         // className={"flex-1 p-6"}
