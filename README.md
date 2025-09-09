@@ -10,9 +10,9 @@
 <em>Empowering Seamless, Scalable Web Experiences Everywhere</em>
 
 <!-- BADGES -->
-<img src="https://img.shields.io/github/last-commit/MahaKoala/NicksInvClient?style=flat&logo=git&logoColor=white&color=0080ff" alt="last-commit">
-<img src="https://img.shields.io/github/languages/top/MahaKoala/NicksInvClient?style=flat&color=0080ff" alt="repo-top-language">
-<img src="https://img.shields.io/github/languages/count/MahaKoala/NicksInvClient?style=flat&color=0080ff" alt="repo-language-count">
+<img src="https://img.shields.io/github/last-commit/nickkd628/client?style=flat&logo=git&logoColor=white&color=0080ff" alt="last-commit">
+<img src="https://img.shields.io/github/languages/top/nickkd628/client?style=flat&color=0080ff" alt="repo-top-language">
+<img src="https://img.shields.io/github/languages/count/nickkd628/client?style=flat&color=0080ff" alt="repo-language-count">
 
 <em>Built with the tools and technologies:</em>
 
@@ -210,13 +210,13 @@ Build NicksInvClient from the source and install dependencies:
 1. **Clone the repository:**
 
     ```sh
-    ❯ git clone https://github.com/MahaKoala/NicksInvClient
+    ❯ git clone https://github.com/nickkd628/client
     ```
 
 2. **Navigate to the project directory:**
 
     ```sh
-    ❯ cd NicksInvClient
+    ❯ cd client
     ```
 
 3. **Install the dependencies:**
@@ -239,7 +239,7 @@ npm start
 
 ### 🧪 Testing
 
-Nicksinvclient uses the {__test_framework__} test framework. Run the test suite with:
+client uses the {__test_framework__} test framework. Run the test suite with:
 
 **Using [npm](https://www.npmjs.com/):**
 
