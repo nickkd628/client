@@ -77,7 +77,7 @@ const Navbar = () => {
             <div className=" flex items-center gap-3 cursor-pointer">
               <div className="w-9 h-9"> image</div>
               {/* Place holder */}
-              <span className=" front-semibold">Nick Dasilva</span>
+              <span className=" front-semibold">Nick DaSilva</span>
             </div>
           </div>
         </div>
