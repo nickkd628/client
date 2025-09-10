@@ -5,7 +5,22 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "seed": "ts-node prisma/seed.ts",
-    "build": ""
+    "build": "rimraf dist && npx tsc",
+    "start": "npm run build && node dist/index.js",
+    "dev": "npm run build && concurrently \"npx tsc -w\" \"nodemon --exec ts-node src/index.ts\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luiznunes100/ecommerce.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luiznunes100/ecommerce/issues"
+  },
+  "homepage": "https://github.com/luiznunes100/ecommerce#readme",
+  "engines": {
+    "node": 
   },
   "keywords": [],
   "author": "",
@@ -20,7 +35,8 @@
     "express": "^5.1.0",
     "helmet": "^8.1.0",
     "morgan": "^1.10.1",
-    "prisma": "^6.15.0"
+    "prisma": "^6.15.0",
+    "rimraf": "^5.0.10"
   },
   "devDependencies": {
     "@types/cors": "^2.8.19",
