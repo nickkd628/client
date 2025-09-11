@@ -36,7 +36,7 @@ const CardSalesSummary = () => {
         year: "2-digit",
       })
     : "N/A";
-
+  // Error in the file need fixing (might be because of server being fat and not returning a response)
   if (isError) {
     return <div className="m-5">Failed to fetch data</div>;
   }
