@@ -1,5 +1,5 @@
 import React from "react";
-import { useGetDashboardMetricsQuery } from "../state/api";
+import { useGetDashboardMetricsQuery } from "@/app/state/api";
 import { ShoppingBag } from "lucide-react";
 
 const CardPopularProducts = () => {
