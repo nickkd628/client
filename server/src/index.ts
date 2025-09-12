@@ -5,6 +5,9 @@ import cors from "cors";
 import helmet from "helmet";
 import morgan from "morgan";
 import userRoutes from "./routes/userRoutes";
+import dashboardRoutes from "./routes/dashboardRoutes";
+import productRoutes from "./routes/productRoutes";
+import expenseRoutes from "./routes/expenseRoutes";
 
 // Route IMPORTs
 
@@ -21,7 +24,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
 
 // Routes
+app.use("/dashboard", dashboardRoutes);
+app.use("/products", productRoutes);
 app.use("/users", userRoutes); // http://localhost:8000/users
+app.use("/expenses", expenseRoutes); // http://localhost:8000/expenses
 
 // server
 const port = process.env.PORT || 3001;

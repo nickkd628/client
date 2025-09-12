@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@emotion/styled": "^11.14.1",
+    "@mui/x-data-grid": "^8.11.2",
     "@reduxjs/toolkit": "^2.9.0",
     "dotenv": "^17.2.2",
     "lucide-react": "^0.542.0",
@@ -19,7 +20,8 @@
     "react-dom": "19.1.0",
     "react-redux": "^9.2.0",
     "recharts": "^3.2.0",
-    "redux-persist": "^6.0.0"
+    "redux-persist": "^6.0.0",
+    "uuid": "^13.0.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
@@ -28,6 +30,7 @@
     "@types/numeral": "^2.0.5",
     "@types/react": "^19.1.12",
     "@types/react-dom": "^19.1.9",
+    "@types/uuid": "^10.0.0",
     "autoprefixer": "^10.4.21",
     "eslint": "^9",
     "eslint-config-next": "15.5.2",

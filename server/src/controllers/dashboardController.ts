@@ -7,7 +7,7 @@ export const getDashboardMetrics = async (
   res: Response
 ): Promise<void> => {
   try {
-    const popularProducts = await prisma.product.findMany({
+    const popularProducts = await prisma.products.findMany({
       take: 15,
       orderBy: {
         stockQuantity: "desc",
@@ -41,8 +41,8 @@ export const getDashboardMetrics = async (
       }
     );
     const expenseByCategorySummary = expenseByCategorySummaryRaw.map(
-      (item: { date: string; amount: number }) => ({
-        //might need to change like 44 to 45 not how the video looks but for some reason item is throwing an error  
+      (item) => ({
+        //might need to change like 44 to 45 not how the video looks but for some reason item is throwing an error
         ...item,
         amount: item.amount.toString(),
       })
