@@ -8,8 +8,8 @@
     "forceConsistentCasingInFileNames": true,
     "noEmit": false,
     "esModuleInterop": true,
-    "module": "CommonJS",
-    "moduleResolution": "node",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "allowSyntheticDefaultImports": true,
@@ -24,14 +24,8 @@
     },
     "types": ["node"]
   },
-  "include": [
-    "src/**/*"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist",
-    "prisma/**/*.ts"
-  ],
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", "prisma/**/*.ts"],
   "ts-node": {
     "esm": false,
     "compilerOptions": {
