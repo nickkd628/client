@@ -1,4 +1,5 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
+import { v4 } from "uuid";
 
 export interface Product {
   productId: string;
@@ -76,7 +77,10 @@ export const api = createApi({
       query: (newProduct) => ({
         url: "/products",
         method: "POST",
-        body: newProduct,
+        body: {
+          ...newProduct,
+          productId: `prod_${v4()}`,
+        },
       }),
       invalidatesTags: ["Products"],
     }),

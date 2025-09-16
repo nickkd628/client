@@ -19,7 +19,8 @@ export const getProducts = async (
     });
     res.json(products);
   } catch (error) {
-    res.status(500).json({ message: "error getting products" });
+    console.error("Error fetching products:", error);
+    res.status(500).json({ message: "Failed to fetch products", error: error instanceof Error ? error.message : "Unknown error" });
   }
 };
 
@@ -40,6 +41,7 @@ export const createProduct = async (
     });
     res.status(201).json(product);
   } catch (error) {
-    res.status(500).json({ message: "error getting products" });
+    console.error("Error creating product:", error);
+    res.status(500).json({ message: "Failed to create product", error: error instanceof Error ? error.message : "Unknown error" });
   }
 };
