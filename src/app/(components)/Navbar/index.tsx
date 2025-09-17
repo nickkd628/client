@@ -21,6 +21,11 @@ const Navbar = () => {
     dispatch(setIsDarkMode(!isDarkMode));
   };
 
+  const handleLogout = () => {
+    dispatch(logout());
+    router.push("/auth/login");
+  };
+
   return (
     <>
       {/* added fragments to wrap the header rather then having th divs wrapped in the header component */}

@@ -19,7 +19,11 @@ datasource db {
 model Users {
   userId String @id
   name String
-  email String
+  email String @unique
+  username String @unique
+  passwordHash String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
   //  Sales   SalesHistory[]
 }
 

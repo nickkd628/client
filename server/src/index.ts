@@ -8,6 +8,8 @@ import userRoutes from "./routes/userRoutes";
 import dashboardRoutes from "./routes/dashboardRoutes";
 import productRoutes from "./routes/productRoutes";
 import expenseRoutes from "./routes/expenseRoutes";
+import healthRoutes from "./routes/healthRoutes";
+import authRoutes from "./routes/authRoutes";
 
 // Route IMPORTs
 
@@ -30,15 +32,17 @@ app.use(cors({
 
 // Routes
 app.get("/", (req, res) => {
-  res.json({ message: "API is running", endpoints: ["/dashboard", "/products", "/users", "/expenses"] });
+  res.json({ message: "API is running", endpoints: ["/dashboard", "/products", "/users", "/expenses", "/auth"] });
 });
+app.use("/", healthRoutes);
+app.use("/auth", authRoutes); // http://localhost:8000/auth
 app.use("/dashboard", dashboardRoutes);
 app.use("/products", productRoutes);
 app.use("/users", userRoutes); // http://localhost:8000/users
 app.use("/expenses", expenseRoutes); // http://localhost:8000/expenses
 
 // server
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 8000;
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
